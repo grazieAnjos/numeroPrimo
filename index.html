@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números primos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="textos">Números primos</h1>
+    <h3 class="textos">Escolha um número de 0 a 100 para saber se ele é primo ou não.</h3>
+    <!--<input type="number" min="0" max="100" id="numero">-->
+    <input id="numero"
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "3"
+    min="0" max="100"
+ />
+    <button onclick="validarNumero()" id="enviar">Enviar</button>
+
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
